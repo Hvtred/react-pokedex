@@ -1,0 +1,48 @@
+:root {
+    --light-background: #ECEFF1;
+    --dark-background: #1b1b1b;
+    --dark-thumbnail: #282828;
+    --dark-border: #616060;
+    --dark-text: #fff;
+    --light-input-background: #ECEFF1;
+    --dark-input-background: #282828;
+    --light-input-text: #000;
+    --dark-input-text: #000;
+}
+
+body {
+    background-color: var(--light-background);
+}
+
+body.dark {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+body.dark .pokemon-thumbnail {
+    background-color: var(--dark-thumbnail);
+    border: 1px solid var(--dark-border);
+}
+
+.btn-theme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #eb4444;
+    color: #ECEFF1;
+}
+
+.input-theme {
+    background-color: var(--light-input-background);
+    color: var(--light-input-text);
+}
+
+body.dark .input-theme {
+    background-color: var(--dark-input-background);
+    color: var(--dark-input-text);
+}
+
+.button-theme {
+    background-color: #ffffff;
+    color: #000;
+}
